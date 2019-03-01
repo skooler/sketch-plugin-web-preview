@@ -1,0 +1,37 @@
+{
+  "name": "sketch-plugin-web-preview",
+  "description": "Preview your web design in browser",
+  "version": "1.0.0",
+  "author": "Skooler Co., Ltd.",
+  "bugs": {
+    "url": "https://github.com/skooler/sketch-plugin-web-preview/issues"
+  },
+  "devDependencies": {
+    "@skpm/builder": "~0.4.0"
+  },
+  "engines": {
+    "sketch": ">=3.0"
+  },
+  "homepage": "https://github.com/skooler/sketch-plugin-web-preview",
+  "keywords": [
+    "sketch"
+  ],
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skooler/sketch-plugin-web-preview.git"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "lint": "eslint .",
+    "postinstall": "npm run build && skpm-link",
+    "start": "skpm-build --watch --run",
+    "watch": "skpm-build --watch"
+  },
+  "skpm": {
+    "name": "Web Preview",
+    "manifest": "src/manifest.json",
+    "main": "web-preview.sketchplugin"
+  }
+}
