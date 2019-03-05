@@ -30,4 +30,4 @@ The browser opens automatically, and shows the preview. If you change the size o
 
 ## License
 
-MIT
+[MIT](LICENSE)
